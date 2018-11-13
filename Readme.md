@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктор Шандарин](https://up.htmlacademy.ru/htmlcss/23/user/798939).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Шабельников](https://htmlacademy.ru/profile/artyglitch)
 
 ---
 
