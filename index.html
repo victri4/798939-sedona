@@ -5,58 +5,68 @@
     <title>Sedona</title>
   </head>
   <body>
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  		 <a class="main-header-logo">
+  	<header class="page-header">
+      <h1 class="visually-hidden">Седона</h1>
+  		<nav class="page-navigation">
+  		 <a class="page-header-logo">
   		  <img src="" width="" height="" alt="Логотип Седона">
   		 </a>
   		 <ul class="site-navigation">
-  		   <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-  		   <li><a href="foto&video.html">ФОТО И ВИДЕО</a></li>
-  		   <li><a href="map.html">КАРТА ШТАТА</a></li>
-  		   <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+  		   <li><a href="info.html">Информация</a></li>
+  		   <li><a href="foto&video.html">Фото и видео</a></li>
+  		   <li><a href="map.html">Карта штата</a></li>
+  		   <li><a href="hotels.html">Гостиницы</a></li>
   		 </ul>	
   		</nav>
   	</header>
-  	<main class="container">
-        <div class="promo">
-  		  <img src="http://placehold.it/150x100" width="" height="" alt="Добро пожаловать в Седону">
-  		 </div>
+  	<main class="page-content">
+      <section class="promo">
+          <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+  		    <img src="http://placehold.it/150x100" width="" height="" alt="Добро пожаловать в Седону">
+  		</section>
   		<article class="features">
-  		  <h1 class="header">Седона — небольшой городок в Аризоне,
-           заслуживающий большего!</h1>
-          <p class="features">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <div class="promo-city">
-  		  <img src="img" width="" height="" alt="Настоящий городок">
-  		 </div> 
-  		 <!--Текст--> 
-  		<div class="promo-bridge">
-  		  <img src="img" width="" height="" alt="Мост Дьявола">
-  		 </div> 
-  		 <!--Текст-->
-        </article>
-        <section class="search">
-        	<h2 class="search-header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        	<p class="search-date">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <!--Тут  будет форма ,но это не точно-->
+        <header class="header-features"><!--дать классы хедерам-->
+          <h2 class="header-title">Седона — небольшой городок в Аризоне,
+           заслуживающий большего!</h2>
+          <p class="features-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
+        </header>
+        <section class="">
+  		   <div class="promo-city">
+  		      <img src="img" width="" height="" alt="Настоящий городок">
+  		   </div> <!--Текст--> 
+        </section>
+  		  <section>
+  		   <div class="promo-bridge">
+  		     <img src="img" width="" height="" alt="Мост Дьявола">
+  		   </div> 
+        </section>
+      </article>
+        <section class="search-hotel">
+          <header class="search-header">
+            <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
+            <b class="search-question">Заинтресовались?</b>
+            <p class="search-date">укажите продполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>  
+          </header>
+        	        <!--Тут  будет форма ,но это не точно-->
         <img src="img" width="" height="" alt="Карта">
         </section>
   	</main>
-  	<footer class="main-footer">
-  		<div class="footer-hashtag">
-  			<a href="#">#VISITSEDONA</a>
-  		</div>
-  		<div class="footer-social">
+  	<footer class="page-footer">
+  		<p class="footer-hashtag">
+  			<a href="#">#visitsedona</a>
+  		</p>
+  		<section class="footer-social">
+        <h2 class="visually-hidden">Седона в социальных сетях</h2>
   			<ul>
   				<li><a class="social-button" href="#">твиттер</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">ютуб</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">ютуб</a></li>
   			</ul>
-  		</div>
-  		<div class="footer-coryright">
-  			<span>WEBSITE BY</span>
+  		</section>
+  		<p class="footer-coryright">
+  			<span>website by</span>
   			<a class="button" href="https://htmlacademy.ru">html academy</a>
-  		</div>
+  		</p>
   	</footer>
     </body>
 </html>
