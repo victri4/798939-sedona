@@ -20,7 +20,24 @@
       </nav>
     </header>
   	<main class="container">
-  		<!-- Форма поиска отелей-->
+  		<form class="filter" action="" method="post">
+        <fieldset>
+          <ul>
+            <p>Инфраструктура:</p>
+            <li><input type="checkbox" name="pool" id="filter-pool" checked><label for="filter-pool">Бассейн</label></li>
+            <li><input type="checkbox" name="parking" id="filter-parking"><label for="filter-parking">Парковка</label></li>
+            <li><input type="checkbox" name="web" id="filter-web"><label for="filter-web"l>Wi-Fi</label></li>
+          </ul>
+          <ul>
+            <p>Тип жилья:</p>
+            <li><input type="checkbox" name="hotel" id="filter-hotel" checked><label for="filter-hotel">Гостиница</label></li>
+            <li><input type="checkbox" name="motel" id="filter-motel" checked><label for="filter-motel">Мотель</label></li>
+            <li><input type="checkbox" name="apartment" id="filter-apartment" checked><label for="filter-apartment"l>Апартаменты</label></li>
+          </ul>
+          
+
+        </fieldset>
+      </form>
   		<section class="hotel">
         <div class="hotel-item-first">
   				<img src="img/content/amara.jpg" alt="Амара Спа" width="135" height="90">
