@@ -96,22 +96,32 @@
         	<form class="form-search" action="" method="post">
             <h2 class="form-header">Поиск гостиницы седоне</h2>
             <fieldset>
-              <div class="">
-                <p><label class="form-search-label" for="data-field">Дата заезда:
+                      <p><label class="form-search-label" for="data-field">Дата заезда:
                 </label>
-                  <input class="form-search-field" type="text" name="date" value="" aria-label="Дата заезда" placeholder="24 апреля 2017">
+                  <input class="form-search-field" type="text" name="date" aria-label="Дата заезда" placeholder="24 апреля 2017">
                   <button type="button" class="form-search-calendar">Календарь</button>
                 </p>
                 <p>
                   <label class="form-search-label for="data-field">Дата выезда:
                 </label>
-                  <input class="form-search-field" type="text" name="date"  value="" aria-label="Дата выезда" placeholder="4 июля 2017"> 
+                  <input class="form-search-field" type="text" name="date" aria-label="Дата выезда" placeholder="4 июля 2017"> 
                   <button type="button" class="form-search-calendar">Календарь</button>
                 </p>
-              </div>
+                <label class="form-search-number">Взрослые:
+                  <input class="minus-button" type="button" name="minus" value="-">
+                  <input class="number" type="text" name="adult" placeholder="2">
+                  <input class="plus-button" type="button" name="plus" value="+">
+                </label>
+                <label class="form-search-number">Дети:
+                  <input class="minus-button" type="button" name="-minus" value="-">
+                  <input class="number" type="text" name="child" placeholder="2">
+                  <input class="plus-button" type="button" name="plus" value="+">
+                </label>
+                <p>
                 <button class="buttons" type="button">
                   Найти
                 </button>
+               </p>
             </fieldset>
 
           </form>

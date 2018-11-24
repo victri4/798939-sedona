@@ -19,25 +19,57 @@
         </ul>  
       </nav>
     </header>
+
   	<main class="container">
-  		<form class="filter" action="" method="post">
-        <fieldset>
+  		<form  action="" method="post">
+        <fieldset class="filter-col">
           <ul>
-            <p>Инфраструктура:</p>
+            <legend>Инфраструктура:</legend>
             <li><input type="checkbox" name="pool" id="filter-pool" checked><label for="filter-pool">Бассейн</label></li>
             <li><input type="checkbox" name="parking" id="filter-parking"><label for="filter-parking">Парковка</label></li>
-            <li><input type="checkbox" name="web" id="filter-web"><label for="filter-web"l>Wi-Fi</label></li>
+            <li><input type="checkbox" name="web" id="filter-web"><label for="filter-web">Wi-Fi</label></li>
           </ul>
+          </fieldset>
+          <fieldset class="filter-col">
           <ul>
-            <p>Тип жилья:</p>
+            <legend>Тип жилья:</legend>
             <li><input type="checkbox" name="hotel" id="filter-hotel" checked><label for="filter-hotel">Гостиница</label></li>
             <li><input type="checkbox" name="motel" id="filter-motel" checked><label for="filter-motel">Мотель</label></li>
-            <li><input type="checkbox" name="apartment" id="filter-apartment" checked><label for="filter-apartment"l>Апартаменты</label></li>
+            <li><input type="checkbox" name="apartment" id="filter-apartment" checked><label for="filter-apartment">Апартаменты</label></li>
           </ul>
-          
+          </fieldset>
 
-        </fieldset>
+          <fieldset class="filter-col">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="filter-range">
+              <div class="price-controls">
+                <label class="min-price">От <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">До <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+              <div class="bar"></div>
+             </div>
+             <div class="range-toggle range-toggle-min"></div>
+             <div class="range-toggle range-toggle-max"></div>
+             </div>
+               <button class="btn-transparent" type="submit">Показать</button>
+             </div>  
+            </fieldset>
       </form>
+
+      <div class="hotel-sort">
+       <ul>
+          <li class="hotel-sort-title">Найдено: 3</li>
+          <li class="hotel-sort-item">Сортировка:</li>
+          <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По цене</a></li>
+          <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По типу</a></li>
+          <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По рейтингу</a></li>
+          <li class="hotel-sort-item"><button type="button"></button></li>
+          <li class="hotel-sort-item"><button type="button"></button></li>
+        </ul> 
+      </div>
+
   		<section class="hotel">
         <div class="hotel-item-first">
   				<img src="img/content/amara.jpg" alt="Амара Спа" width="135" height="90">
@@ -77,6 +109,7 @@
   			</div>
    		</section>
    	</main>
+    
     <footer class="page-footer">
       <p class="footer-hashtag">
         <a href="#">#visitsedona</a>
