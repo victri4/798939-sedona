@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -26,7 +29,7 @@
   		</section>
   		<article class="promo">
         <header class="header-promo">
-          <h2 class="header-title">Седона — небольшой городок в Аризоне,
+          <h2 class="header-title">Седона — небольшой городок в Аризоне,<br>
            заслуживающий большего!</h2>
           <p class="title-promo">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
         </header>
@@ -34,7 +37,7 @@
         <section class="feauters">
   		    <div class="feauters-top">
             <div class="feauters-item">
-              <p>Настоящий городок</p>
+              <h3>Настоящий городок</h3>
               <p>— №1 —</p>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
@@ -61,7 +64,7 @@
            </div> 
            <div class="feauters-top">
              <div class="feauters-item">
-              <p>Там есть Мост дьявола</p>
+              <h3>Там есть Мост дьявола</h3>
               <p>— №2 —</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
@@ -96,15 +99,14 @@
         	<form class="form-search" action="" method="post">
             <h2 class="form-header">Поиск гостиницы седоне</h2>
             <fieldset>
-                      <p><label class="form-search-label" for="data-field">Дата заезда:
+                    <p><label class="form-search-label" for="from">Дата заезда:
                 </label>
-                  <input class="form-search-field" type="text" name="date" aria-label="Дата заезда" placeholder="24 апреля 2017">
+                  <input class="form-search-field" type="text" name="date" id="from" placeholder="24 апреля 2017">
                   <button type="button" class="form-search-calendar">Календарь</button>
                 </p>
-                <p>
-                  <label class="form-search-label for="data-field">Дата выезда:
+                <p><label class="form-search-label" for="to">Дата выезда:
                 </label>
-                  <input class="form-search-field" type="text" name="date" aria-label="Дата выезда" placeholder="4 июля 2017"> 
+                  <input class="form-search-field" type="text" name="date" id="to" placeholder="4 июля 2017"> 
                   <button type="button" class="form-search-calendar">Календарь</button>
                 </p>
                 <label class="form-search-number">Взрослые:
@@ -122,7 +124,7 @@
                   Найти
                 </button>
                </p>
-            </fieldset>
+            </fieldset>   
 
           </form>
         <img src="img/background/map.jpg" width="1200" height="594" alt="Карта Седоны">
