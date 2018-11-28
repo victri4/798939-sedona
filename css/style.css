@@ -58,18 +58,98 @@ a {
   background-color: #81b3d2;
 }
 
-.feauters-item h3,
-{
+.feauters-item h3, {
   font-size: 21px;
   font-weight: normal;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
 }
+
+.feauters-item h3 {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .feauters-item p {
-  font-size: 21px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 21px;
   text-align: center;
   color: #ffffff;
 }
+
+.feauters-list h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.feauters-list p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.feauters-bottom {
+  background-color: #eeeeee;
+}
+
+.search-question {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.search-date {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.form-header {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form-title {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+}
+
+.form-title:hover {
+  background-color: #604e43;
+}
+
+.form-title:active {
+  background-color: #503e33;
+}
+
+.form-header:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-search {
+  font: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+}
+
