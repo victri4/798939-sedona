@@ -55,6 +55,14 @@ a {
   background-color: #ffffff;
 }
 
+.page-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: top;
+  align-content: space-around;
+}
+
 .site-navigation,
 .feauters-list {
   list-style: none;
@@ -278,6 +286,9 @@ a {
 }
 
 .page-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: auto;
 }
 
@@ -332,7 +343,16 @@ a {
 .button-tw {
   background-image: url(../img/icon/twitter.svg);
   background-repeat: no-repeat;
+}
 
+.button-fb {
+  background-image: url(../img/icon/fb-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.button-yt {
+  background-image: url(../img/icon/youtube.svg);
+  background-repeat: no-repeat;
 }
 
 .footer-social ul {
