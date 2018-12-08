@@ -53,9 +53,28 @@ a {
   background-color: #ffffff;
 }
 
+.page-header-logo  {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+
 .site-navigation {
-  display: flex;
-  justify-content: space-around;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ min-height: 55px;
+ padding: 0;
+ margin: 0;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 240px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-right: 20px;
 }
 
 .site-navigation,
@@ -85,9 +104,20 @@ a {
   background-image: url("../img/decor/intro-mask.svg"), url("../img/background/bg.jpg");
   background-position: bottom center,top center;
   background-repeat: no-repeat;
-  background-size: 1200px 59px,1200px 733px;
+  background-size: 1200px 59px,1200px 773px;
 }
 
+.promo-first img {
+  position: relative;
+  left: 370px;
+  top: 77px;
+}
+
+.header-promo {
+  width: 1200px;
+  height: 216px;
+}
+        
 .header-title {
   text-align: center;
   font-size: 21px;
