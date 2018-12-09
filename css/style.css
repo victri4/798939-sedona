@@ -10,9 +10,9 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 26px; 
   font-weight: bold;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
 
   background-color: #f2f2f2;
@@ -21,6 +21,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -101,10 +106,12 @@ a {
 }
 
 .promo-first {
+  width: 100%;
+  min-height: 508px;
   background-image: url("../img/decor/intro-mask.svg"), url("../img/background/bg.jpg");
-  background-position: bottom center,top center;
+  background-position: 0% 100%, center 28.5%;
   background-repeat: no-repeat;
-  background-size: 1200px 59px,1200px 773px;
+  background-size: auto, cover;
 }
 
 .promo-first img {
@@ -114,8 +121,9 @@ a {
 }
 
 .header-promo {
-  width: 1200px;
-  height: 216px;
+  width: 576px;
+  margin: 60px auto 51px auto;
+  padding: 0;
 }
         
 .header-title {
@@ -124,59 +132,66 @@ a {
 }
 
 .title-promo {
+  margin-top: 27px;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
 }
 
-.feauters-item {
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.advantage-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantage-image {
+  width: 600px;
+}
+
+.advantage,
+.blue {
   width: 400px;
-  height: 256px;
-  background-color: #81b3d2;
+  margin: 0 auto;
 }
 
-.feauters-item h3, {
-  font-size: 21px;
-  font-weight: normal;
-  line-height: 21px;
+.advantage {
   text-align: center;
-  color: #ffffff;
+  background: #eeeeee;
 }
-
-.feauters-item h3 {
-  font-size: 21px;
-  font-weight: normal;
-  line-height: 21px;
+.blue {
+  background: #81b3d2;
+  color: white;
+}
+.feature-list {
+  padding: 0;
+  display: flex;
+}
+.feature-item {
   text-align: center;
-  color: #ffffff;
+  width: 33%;
+}
+.advantage-image img {
+  height: auto;
+  width: 100%;
+  display: block;
 }
 
-.feauters-item p {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
-  text-align: center;
-  color: #ffffff;
-}
+.search-hotel {
+  position: relative;
 
-.feauters-list h3 {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 21px;
-  text-align: center;
-  color: #000000;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 73px;
+  padding-top: 50px;
 
-.feauters-list p {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
-  text-align: center;
-  color: #333333;
-}
-
-.feauters-bottom {
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 .search-question {
@@ -228,6 +243,12 @@ a {
   text-align: left;
   color: #000000;
   background-color: #ffffff;
+}
+
+.form-search-label {
+  display: inline-block;
+  width: 91px;
+  margin-right: 17px;
 }
 
 .form-search-field {
