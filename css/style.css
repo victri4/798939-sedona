@@ -109,7 +109,7 @@ img {
   width: 100%;
   min-height: 508px;
   background-image: url("../img/decor/intro-mask.svg"), url("../img/background/bg.jpg");
-  background-position: 0% 100%, center 28.5%;
+  background-position: 0% 101%, center 28.5%;
   background-repeat: no-repeat;
   background-size: auto, cover;
 }
@@ -245,7 +245,8 @@ img {
   background-color: #ffffff;
 }
 
-.form-search-label {
+.form-search-label-from,
+.form-search-label-to {
   display: inline-block;
   width: 91px;
   margin-right: 17px;
@@ -275,6 +276,17 @@ img {
   color:  #000000;
   border: 2px solid #e5e5e5;
 }
+
+.form-search-calendar:hover {
+  font: inherit;
+  color: #000000;
+}
+
+.form-search-calendar:active {
+  font: inherit;
+  color: #81b3d2;
+}
+
 
 .number {
   width: 38px;
@@ -408,6 +420,7 @@ img {
 .footer-coryright span {
   width: 74px;
   height: 11px;
+  vertical-align: top;
   font-family: PTSans;
   font-size: 14px;
   font-weight: normal;
@@ -417,6 +430,10 @@ img {
   letter-spacing: normal;
   text-align: center;
   color: #000000;
+}
+
+.site-navigation-link.active {
+  color: #766357;
 }
 
 .button-link {
@@ -521,7 +538,7 @@ img {
 }
 
 .range-toggle {
-   position: absolute;
+  position: absolute;
   top: -9px;
 
   width: 4px;
@@ -568,4 +585,64 @@ img {
   color: #000000;
 
   background: #ffffff;
+}
+
+.filter-col ul,
+.hotel-sort ul {
+ list-style: none;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-image: url(../img/background/filter-background.jpg);
+  background-size: 1200px 220px; 
+  background-repeat: no-repeat;
+} 
+
+.hotel-sort-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+}
+
+.hotel-sort-sorting {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+}
+
+.hotel-sort-link {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.hotel-sort-link:hover {
+  color: #81b3d2
+}
+
+.hotel-sort-link:active {
+  color: #000000;
+}
+
+.hotel-sort-link.active {
+  color: #81b3d2
+}
+
+.hotel-sort-button-up,
+.hotel-sort-button-down {
+  display: inline-block;
+  font: inherit;
+  width: 11px;
+  height: 10px;
+  color: #cacaca;
 }
