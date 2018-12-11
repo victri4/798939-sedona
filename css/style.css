@@ -54,6 +54,19 @@ img {
   margin: 0 auto;
 }
 
+
+.button {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 30px;
+  
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
 .page-header {
   background-color: #ffffff;
 }
@@ -211,6 +224,8 @@ img {
 }
 
 .form-header {
+  width: 576px;
+  height: 90px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -219,7 +234,7 @@ img {
 }
 
 .form-title {
-  width: 568px;
+  width: 600px;
   height: 86px;
   background-color: #766357;
 }
@@ -236,6 +251,11 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.form-body {
+  position: relative;
+  width: 576px;
+  height: 400px;  
+}
 .form-search {
   font: inherit;
   font-size: 14px;
@@ -276,6 +296,32 @@ img {
   color:  #000000;
   border: 2px solid #e5e5e5;
 }
+
+input[type="text"] { 
+  width: 345px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 26px;
+  background: #f2f2f2; 
+  padding: 0px 10px; 
+  color: #000000; 
+  text-transform: uppercase;
+}
+input[type="text"]::-moz-placeholder {
+  color: #000000;
+}
+input[type="text"]::-webkit-input-placeholder { 
+  color: #000000; 
+}
+input[type="text"]:-ms-input-placeholder { 
+  color: #000000;
+}
+input[type="text"]::-ms-input-placeholder { 
+  color: #000000;
+}
+input[type="text"]::placeholder { 
+  color: #000000;
+} 
 
 .form-search-calendar:hover {
   font: inherit;
