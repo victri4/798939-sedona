@@ -144,6 +144,7 @@ img {
 
 .title-promo {
   margin-top: 27px;
+  margin-bottom: 55px;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -159,21 +160,42 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
+
+.advantage h3 {
+  margin-top: 46px;
+  margin-bottom: 25px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.advantage-number {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantage-description {
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .advantage-image {
   width: 600px;
 }
 
-.advantage,
-.blue {
-  width: 400px;
-  margin: 0 auto;
-}
-
 .advantage {
   text-align: center;
-  background: #eeeeee;
+  width: 300px;
+  background: gray;
 }
 .blue {
+  width: 400px;
   background: #81b3d2;
   color: white;
 }
@@ -190,6 +212,7 @@ img {
   width: 100%;
   display: block;
 }
+
 
 .search-hotel {
   position: relative;
@@ -222,10 +245,7 @@ img {
 }
 
 input[type="text"] { 
-  font-size: 14px;
-  line-height: 26px;
   background: #f2f2f2; 
-  padding: 0px 10px; 
   color: #000000; 
   text-transform: uppercase;
 }
@@ -301,8 +321,13 @@ input[type="text"]::placeholder {
 }
 
 .form-search-field {
-  width: 346px;
+  width: 345px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 26px;
   font: inherit;
   background-color: #f2f2f2;
   font-size: 14px;
