@@ -140,11 +140,12 @@ img {
 .header-title {
   text-align: center;
   font-size: 21px;
+  margin-bottom: 29px;
 }
 
 .title-promo {
   margin-top: 27px;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -180,13 +181,17 @@ img {
 }
 
 .advantage-description {
-  margin-left: 50px;
+  font-family: "PT Sans";
+  margin-bottom: 60px;
   font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
 }
 
-.advantage-image {
+.advantage-image img {
   width: 600px;
+  height: 256px;
+  margin: 0;
 }
 
 .advantage {
@@ -196,6 +201,7 @@ img {
 }
 .blue {
   width: 400px;
+  text-align: center;
   background: #81b3d2;
   color: white;
 }
