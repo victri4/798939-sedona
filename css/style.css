@@ -172,7 +172,7 @@ img {
 }
 
 .advantage-number {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -182,7 +182,6 @@ img {
 
 .advantage-description {
   font-family: "PT Sans";
-  margin-bottom: 60px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -206,13 +205,35 @@ img {
   color: white;
 }
 .feature-list {
-  padding: 0;
   display: flex;
+  padding: 0;
+  list-style: none;
+  background-color: #ffffff;
+
 }
 .feature-item {
+  margin-top: 46px; 
   text-align: center;
   width: 33%;
 }
+
+.feature-item h4 {
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+}
+
+.feature-item p {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+
 .advantage-image img {
   height: auto;
   width: 100%;
