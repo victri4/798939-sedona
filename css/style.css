@@ -145,7 +145,7 @@ img {
 
 .title-promo {
   margin-top: 27px;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
@@ -162,31 +162,6 @@ img {
   flex-wrap: wrap;
 }
 
-
-.advantage h3 {
-  margin-top: 46px;
-  margin-bottom: 25px;
-  font-size: 21px;
-  line-height: 21px;
-  color: #ffffff;
-}
-
-.advantage-number {
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  color: #ffffff;
-}
-
-.advantage-description {
-  font-family: "PT Sans";
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-}
-
 .advantage-image img {
   width: 600px;
   height: 256px;
@@ -196,28 +171,45 @@ img {
 .advantage {
   text-align: center;
   width: 300px;
-  background: gray;
+  background: #eeeeee;
 }
+
 .blue {
   width: 400px;
   text-align: center;
   background: #81b3d2;
   color: white;
 }
+
+.blue h3 {
+    width: 160px;
+    margin: 0 auto;
+    padding-top: 46px;
+    margin-bottom: 24px;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+
+}
+
 .feature-list {
   display: flex;
+  margin: 0;
   padding: 0;
   list-style: none;
   background-color: #ffffff;
-
 }
-.feature-item {
-  margin-top: 46px; 
+
+.feature-item  {
+  width: 400px;
   text-align: center;
-  width: 33%;
 }
 
 .feature-item h4 {
+  position: relative;
+  margin-top: 160px;
+  margin-bottom: 25px;
+  padding: 0;
   font-family: "PT Sans";
   font-size: 21px;
   font-weight: 700;
@@ -226,6 +218,9 @@ img {
 }
 
 .feature-item p {
+  width: 288px;
+  margin: 0 auto;
+  margin-bottom: 82px;
   font-family: "PT Sans";
   font-size: 14px;
   font-weight: 400;
@@ -233,6 +228,41 @@ img {
   color: #333333;
 }
 
+.feature-item.house h4::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 162px;
+  height: 72px;
+  width: 75px;
+  display: block;
+  background-image: url(../img/icon/house.svg);
+  background-repeat: no-repeat;
+}
+
+.feature-item.food h4::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 162px;
+  height: 72px;
+  width: 75px;
+  display: block;
+  background-image: url(../img/icon/food.svg);
+  background-repeat: no-repeat;
+}
+
+.feature-item.gift h4::before {
+  content: "";
+  position: absolute;
+  top: -105px;
+  left: 167px;
+  height: 76px;
+  width: 64px;
+  display: block;
+  background-image: url(../img/icon/gift.svg);
+  background-repeat: no-repeat;
+}
 
 .advantage-image img {
   height: auto;
