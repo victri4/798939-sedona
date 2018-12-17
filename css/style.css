@@ -165,31 +165,31 @@ img {
 .advantage-image img {
   width: 600px;
   height: 256px;
-  margin: 0;
-}
-
-.advantage {
-  text-align: center;
-  width: 300px;
-  background: #eeeeee;
 }
 
 .blue {
   width: 400px;
+  padding-top: 48px;
   text-align: center;
   background: #81b3d2;
   color: white;
 }
 
 .blue h3 {
-    width: 160px;
-    margin: 0 auto;
-    padding-top: 46px;
-    margin-bottom: 24px;
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
 
+.blue p {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  font-weight: 400;
 }
 
 .feature-list {
@@ -220,7 +220,7 @@ img {
 .feature-item p {
   width: 288px;
   margin: 0 auto;
-  margin-bottom: 82px;
+  margin-bottom: 84px;
   font-family: "PT Sans";
   font-size: 14px;
   font-weight: 400;
@@ -270,6 +270,17 @@ img {
   display: block;
 }
 
+.advantage-item {
+  display: flex;
+
+  text-align: center;
+  background: #eeeeee;
+}
+.advantage {
+  width: 300px;
+}
+
+/*Форма поиска*/
 
 .search-hotel {
   position: relative;
@@ -481,6 +492,8 @@ input[type="text"]::placeholder {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3)
 }
+
+/*Футер*/
 
 .page-footer {
   display: flex;
