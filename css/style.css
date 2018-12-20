@@ -42,6 +42,7 @@ img {
 }
 
 .wrapper {
+  position: relative;
   width: 1200px;
   min-height: 100%;
   margin: 0 auto;
@@ -402,8 +403,9 @@ input[type="text"]::placeholder {
 
 .form-search {
   position: absolute;
+  z-index: 1;
   left: 316px;
-  top: 290px;
+  top: 289px;
   width: 568px;
   padding-top: 54px;
   padding-left: 56px;
@@ -585,14 +587,28 @@ input[type="text"]::placeholder {
   color: rgba(255, 255, 255, 0.3)
 }
 
+.map {
+  position: relative;
+}
 /*Футер*/
 
 .page-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: auto;
-  background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 1200px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-hashtag {
+  margin-left: 24px;
 }
 
 .footer-hashtag a {
@@ -663,6 +679,7 @@ input[type="text"]::placeholder {
 }
 
 .footer-coryright span {
+  padding-top: 15px;
   width: 74px;
   height: 11px;
   vertical-align: top;
