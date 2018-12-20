@@ -695,6 +695,47 @@ input[type="text"]::placeholder {
   color: #000000;
 }
 
+/*Страница отелей*/
+
+.form-hotels {
+  display: flex;
+  justify-content: space-between;
+  min-height: 220px;
+}
+
+.filter {
+  background-image: url(../img/background/filter-background.jpg);
+  background-size: 1200px 220px; 
+  background-repeat: no-repeat;
+} 
+
+.filter-col,
+.filter-range-field {
+  border: none;
+  color: #ffffff;
+}
+
+.filter-col-infrastructure,
+.filter-col-house {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.infrastructure li,
+.house li {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+input[type="checkbox"] { display: none; }
+
+.filter-range-field {
+  padding-top: 30px;
+  padding-right: 72px;
+
+}
 .site-navigation-link.active {
   color: #766357;
 }
@@ -855,16 +896,6 @@ input[type="text"]::placeholder {
  list-style: none;
 }
 
-.filter {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-image: url(../img/background/filter-background.jpg);
-  background-size: 1200px 220px; 
-  background-repeat: no-repeat;
-} 
 
 .hotel-sort-title {
   font-size: 21px;
@@ -909,3 +940,4 @@ input[type="text"]::placeholder {
   height: 10px;
   color: #cacaca;
 }
+
