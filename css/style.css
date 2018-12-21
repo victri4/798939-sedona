@@ -700,12 +700,16 @@ input[type="text"]::placeholder {
 .form-hotels {
   display: flex;
   justify-content: space-between;
-  min-height: 220px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .filter {
+  padding-top: 24px;
+  padding-left: 72px;
   background-image: url(../img/background/filter-background.jpg);
-  background-size: 1200px 220px; 
+  background-size: 1200px 219px; 
   background-repeat: no-repeat;
 } 
 
@@ -715,13 +719,25 @@ input[type="text"]::placeholder {
   color: #ffffff;
 }
 
+.filter-col ul,
+.hotel-sort ul {
+  margin: 0;
+  padding: 0;
+}
+
 .filter-col-infrastructure,
 .filter-col-house {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
 
+.infrastructure ul {
+  padding: 
+}
 .infrastructure li,
 .house li {
   font-size: 14px;
@@ -729,7 +745,34 @@ input[type="text"]::placeholder {
   font-weight: 400;
 }
 
-input[type="checkbox"] { display: none; }
+.filter-option {
+  margin-bottom: 36px;
+}
+
+input[type="checkbox"] {
+  display: none
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #ffffff;
+}
 
 .filter-range-field {
   padding-top: 30px;
@@ -939,5 +982,10 @@ input[type="checkbox"] { display: none; }
   width: 11px;
   height: 10px;
   color: #cacaca;
+}
+
+.hotel-sort-list {
+  display: flex;
+  justify-content: space-between;
 }
 
