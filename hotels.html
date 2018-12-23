@@ -40,9 +40,9 @@
           <fieldset class="filter-col">
           <ul class="house">
             <legend class="filter-col-house">Тип жилья:</legend>
-            <li><input type="checkbox" name="hotel" id="filter-hotel" checked><label for="filter-hotel">Гостиница</label></li>
-            <li><input type="checkbox" name="motel" id="filter-motel" checked><label for="filter-motel">Мотель</label></li>
-            <li><input type="checkbox" name="apartment" id="filter-apartment" checked><label for="filter-apartment">Апартаменты</label></li>
+            <li class="filter-option"><input class="input-type filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked><label for="filter-hotel">Гостиница</label></li>
+            <li class="filter-option"><input class="input-type filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked><label for="filter-motel">Мотель</label></li>
+            <li class="filter-option"><input class="input-type filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked><label for="filter-apartment">Апартаменты</label></li>
           </ul>
           </fieldset>
 
@@ -73,52 +73,76 @@
           <li class="hotel-sort-item"><a href="#" class="hotel-sort-link active">По цене</a></li>
           <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По типу</a></li>
           <li class="hotel-sort-item"><a href="#" class="hotel-sort-link">По рейтингу</a></li>
-          <li class="hotel-sort-button-up"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button></li>
-          <li class="hotel-sort-button-down"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button></li>
+          <li class="hotel-sort-button button-up"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button></li>
+          <li class="hotel-sort-button button-down"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button></li>
         </ul> 
       </div>
 
   		<section class="hotel">
-        <div class="hotel-item-first">
-  				<img src="img/content/amara.jpg" alt="Амара Спа" width="135" height="90">
-            <h3>Amara Resort & Spa</h3>
-  				  <b>Гостиница</b>
-  				  <b>От 4000 Р.</b>
-  				  <a class="btn" href="#">Подробнее</a>
-            <a class="btn" href="#">Забронировать</a>
+        <div class="hotel-item">
+  				<img src="img/content/amara.jpg" alt="Внешний вид гостиницы Амара" width="135" height="90">
+            <div class="overview">
+              <a href="amara.html">
+                <h3>Amara Resort & Spa</h3>
+              </a>
+              <div class="hotel-more">
+  				      <span>Гостиница</span>
+                <a class="btn more" href="#">Подробнее</a>
+  				    </div>
+              <div class="price-booking">
+                <span>От 4000 Р.</span>
+                <a class="btn book" href="#">Забронировать</a>
+              </div>
+            </div>
             <div class="rating">
-  				<div class="rating-stars"></div>
-  				<div class="rating-text">Рейтинг 8,5</div>
+  				<p class="star-4 rating-stars"></p>
+  				<p class="rating-text">Рейтинг 8,5</p>
   			 </div>
         </div>
-  			<div class="hotel-item-second">
-  				<img src="img/content/desert.jpg" alt="Десерт Инн" width="135" height="90">
-  				<h3>Desert Quail Inn</h3>
-  				<b>Мотель</b>
-  				<b>От 3000 Р.</b>
-  				<a class="btn" href="#">Подробнее</a>
-                <a class="btn" href="#">Забронировать</a>
-                <div class="rating">
-  				<div class="rating-stars"></div>
-  				<div class="rating-text">Рейтинг 8,9</div>
-  			 </div>
-  			</div>
-  			<div class="hotel-item-third">
-  				<img src="img/content/villas.jpg" alt="Вилла Диабло" width="135" height=90">
-  				<h3>Villas at Poco Diablo</h3>
-  				<b>Апартаменты</b>
-  				<b>От 2000 Р.</b>
-  				<a class="btn" href="#">Подробнее</a>
-                <a class="btn" href="#">Забронировать</a>
-                <div class="rating">
-  				<div class="rating-stars"></div>
-  				<div class="rating-text">Рейтинг 9,2</div>
-  			 </div>
-  			</div>
+  			<div class="hotel-item">
+          <img src="img/content/desert.jpg" alt="Внешний вид гостиницы Дезерт" width="135" height="90">
+            <div class="overview">
+              <a href="desert.html">
+                <h3>Desert Quail Inn</h3>
+              </a>
+              <div class="hotel-more">
+                <span>Мотель</span>
+                <a class="btn more" href="#">Подробнее</a>
+              </div>
+              <div class="price-booking">
+                <span>От 3000 Р.</span>
+                <a class="btn book" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating">
+          <p class="star-3 rating-stars"></p>
+          <p class="rating-text">Рейтинг 8,9</p>
+         </div>
+        </div>
+  			<div class="hotel-item">
+          <img src="img/content/villas.jpg" alt="Внешний вид гостиницы Виллы Диабло" width="135" height="90">
+            <div class="overview">
+              <a href="villas.html">
+                <h3>Villas at Poco Diablo</h3>
+              </a>
+              <div class="hotel-more">
+                <span>Апартаменты</span>
+                <a class="btn more" href="#">Подробнее</a>
+              </div>
+              <div class="price-booking">
+                <span>От 2000 Р.</span>
+                <a class="btn book" href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating">
+          <p class="star-2 rating-stars"></p>
+          <p class="rating-text">Рейтинг 9,2</p>
+         </div>
+        </div>
    		</section>
    	</main>
     
-    <footer class="page-footer">
+    <footer class="inner-footer">
       <p class="footer-hashtag">
         <a href="#">#visitsedona</a>
       </p>
