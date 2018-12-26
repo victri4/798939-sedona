@@ -95,6 +95,7 @@ img {
 
 .site-navigation li:nth-child(3) {
   margin-right: 20px;
+  word-spacing: 1px;
 }
 
 .site-navigation,
@@ -723,7 +724,7 @@ input[type="text"]::placeholder {
 
 .form-hotels {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -745,6 +746,10 @@ input[type="text"]::placeholder {
   color: #ffffff;
 }
 
+.filter-col  {
+ margin-right: 118px;
+}
+
 .filter-col ul,
 .hotel-sort ul {
   margin: 0;
@@ -761,9 +766,6 @@ input[type="text"]::placeholder {
   font-weight: 700;
 }
 
-.infrastructure ul {
-  padding: 
-}
 .infrastructure li,
 .house li {
   font-size: 14px;
@@ -782,9 +784,7 @@ input[type="checkbox"] {
 
 .filter-option label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
@@ -861,9 +861,9 @@ input[type="checkbox"] {
   background-position: 0 0;
 }
 
-
 .filter-range-field {
-  padding-right: 70px;
+  margin: 0 auto;
+  margin-left: 231px;
 
 }
 .site-navigation-link.active {
@@ -926,11 +926,9 @@ input[type="checkbox"] {
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
-  line-height: 38px;
+  line-height: 31px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -943,40 +941,33 @@ input[type="checkbox"] {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -989,13 +980,13 @@ input[type="checkbox"] {
   background: #1c4f80;
 }
 
-
 .range-toggle-min {
   left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
+
 }
 
 .btn-transparent {
@@ -1010,7 +1001,6 @@ input[type="checkbox"] {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1085,29 +1075,36 @@ input[type="checkbox"] {
   color: #81b3d2
 }
 
-.hotel-sort-button {
-  margin-left: auto;
-  display: inline-block;
-  font: inherit;
+.hotel-sort-up {
+  position: absolute;
   width: 11px;
   height: 10px;
-  border-radius: 10px;
-  background-color: transparent;
-    fill: #cacaca;
-    border: none;
+  right: 96px;
+  fill: #cacaca;
 }
 
-.button-up {
-  position: absolute;
-  right: 100px;
-  fill: #cacaca
+.hotel-sort-up:hover {
+  fill: #000000;
 }
 
-.button-down {
-  position: absolute;
-  right: 78px;
+.hotel-sort-up:active {
   fill: #81b3d2;
- background-color: transparent;
+}
+
+.hotel-sort-down {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  right: 73px;
+  fill: #81b3d2;
+}
+
+.hotel-sort-down:hover {
+  fill: #000000;
+}
+
+.hotel-sort-down:active {
+  fill: #81b3d2;
 }
 
 .hotel {
@@ -1256,7 +1253,6 @@ input[type="checkbox"] {
   font-weight: 400;
   background-color: #f2f2f2;
 }
-
 
 .inner-footer {
   display: flex;
