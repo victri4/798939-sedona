@@ -94,8 +94,8 @@ img {
 }
 
 .site-navigation li:nth-child(3) {
-  margin-right: 20px;
-  word-spacing: 1px;
+  margin-right: 15px;
+  word-spacing: 3px;
 }
 
 .site-navigation,
@@ -125,7 +125,7 @@ img {
   width: 100%;
   min-height: 508px;
   background-image: url("../img/decor/intro-mask.svg"), url("../img/background/bg.jpg");
-  background-position: 0% 100.5%, center 28.5%;
+  background-position: 0% 101%, center 28.5%;
   background-repeat: no-repeat;
   background-size: auto, cover;
 }
@@ -149,7 +149,7 @@ img {
 }
 
 .title-promo {
-  margin-top: 27px;
+  margin-top: 29px;
   margin-bottom: 50px;
   font-size: 14px;
   font-weight: normal;
@@ -178,7 +178,7 @@ img {
 
 .blue {
   width: 400px;
-  padding-top: 46px;
+  padding-top: 48px;
   text-align: center;
   background: #81b3d2;
   color: white;
@@ -195,9 +195,10 @@ img {
 }
 
 .blue p {
-  width: 307px;
-  margin: 0 auto;
+  width: 303px;
+  padding-left: 5px;
   padding-bottom: 21px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -517,14 +518,6 @@ input[type="text"]::placeholder {
     width: auto;
 }
 
-.find-item button {
-  position: absolute;
-  top: 7px;
-  right: 3px;
-  background-color: transparent;
-  border: none;
-}
-
 .find-item .input-number {
   -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -532,24 +525,19 @@ input[type="text"]::placeholder {
     margin-left: auto;
     max-height: 38px;
     width: 346px;
-
     text-transform: uppercase;
     font-size: 14px;
     color: #000000;
     font-weight: 700;
-
     background-color: #f2f2f2;
-
     border: 2px solid #f2f2f2;
-
 }
 
 .find-item .input-adults {
-    margin-left: 41px;
+    margin-left: 39px;
     padding-left: 23px;
     padding-right: 23px;
     width: 114px;
-
     text-align: center;
 }
 
@@ -558,20 +546,49 @@ input[type="text"]::placeholder {
     padding-left: 23px;
     padding-right: 23px;
     width: 114px;
-
     text-align: center;
 }
 
 .find-item input:hover {
     background-color: #ebebeb;
-
     border: 2px solid #ebebeb;
 }
 
 .find-item input:focus { 
     background-color: #ffffff;
-
     border: 2px solid #e5e5e5;
+}
+
+.find-item button {
+  width: 11px;
+  height: 11px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.minus-adult {
+  position: absolute;
+  top: 203px;
+  left: 175px;
+}
+
+.plus-adult {
+  position: absolute;
+  top: 202px;
+  left: 251px;
+}
+
+.minus-child {
+  position: absolute;
+  top: 203px;
+  left: 175px;
+}
+
+.plus-child {
+  position: absolute;
+  top: 202px; 
+  left: 483px;
 }
 
 .search-button {
