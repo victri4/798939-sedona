@@ -569,7 +569,7 @@ input[type="text"]::placeholder {
 
 .minus-adult {
   position: absolute;
-  top: 203px;
+  top: 202px;
   left: 175px;
 }
 
@@ -581,8 +581,8 @@ input[type="text"]::placeholder {
 
 .minus-child {
   position: absolute;
-  top: 203px;
-  left: 175px;
+  top: 202px;
+  left: 408px;
 }
 
 .plus-child {
