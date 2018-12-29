@@ -100,6 +100,16 @@ img {
   word-spacing: 3px;
 }
 
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
 .site-navigation,
 .feauters-list {
   list-style: none;
@@ -874,31 +884,7 @@ input[type="checkbox"] {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:not(:disabled) + label:hover::before {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/icon/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.filter-input-checkbox:checked:disabled + label::before {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/icon/checkbox-disabled.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.filter-input-checkbox::checked + label::before {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   left: -39px;
@@ -906,30 +892,6 @@ input[type="checkbox"] {
   width: 25px;
   height: 25px;
   background-image: url("../img/icon/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.filter-input-checkbox:checked:not(:disabled) + label:hover::before {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/icon/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.filter-input-checkbox:checked:disabled + label::before{
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img//icon/checkbox-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
