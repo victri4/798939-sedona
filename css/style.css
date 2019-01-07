@@ -10,7 +10,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px; 
+  line-height: 26px;
   font-weight: bold;
   color: #333333;
   text-transform: uppercase;
@@ -49,7 +49,7 @@ img {
   margin: 0 auto;
   -webkit-box-shadow: 0 0 15px rgba(0,0,0,.5);
           box-shadow: 0 0 15px rgba(0,0,0,.5);
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 .container {
@@ -77,7 +77,7 @@ img {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-  
+
 .site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +118,7 @@ img {
 .site-navigation-link {
   font-size: 14px;
   line-height: 26px;
-  color: #000000; 
+  color: #000000;
 }
 
 .site-navigation-link:hover {
@@ -130,7 +130,7 @@ img {
 }
 
 .site-navigation-link.active {
-  color: #766357; 
+  color: #766357;
 }
 
 .promo-first {
@@ -153,7 +153,7 @@ img {
   margin: 60px auto 51px auto;
   padding: 0;
 }
-        
+
 .header-title {
   text-align: center;
   font-size: 21px;
@@ -214,17 +214,13 @@ img {
 }
 
 .blue p {
-  width: 300px;
+  width: 302px;
   padding-bottom: 21px;
   margin: 0 auto;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   font-weight: 400;
-}
-
-.blue>.advantage-description {
-  width: 306px;
 }
 
 .feature-list {
@@ -370,29 +366,11 @@ img {
   text-align: center;
   color: #333333;
 }
-/*Форма поиска*/
+
 .form-show {
   display: block;
   animation-name: show;
   animation-duration: 2s;
-} 
-
-@keyframes show {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
-@keyframes close {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: 0;
-  }
 }
 
 .hotel-button {
@@ -420,27 +398,27 @@ img {
   background-color: #ffffff;
 }
 
-input[type="text"] { 
-  background: #f2f2f2; 
-  color: #000000; 
+input[type="text"] {
+  background: #f2f2f2;
+  color: #000000;
   text-transform: uppercase;
 }
 
-input[type="text"]::-webkit-input-placeholder { 
-  color: #000000; 
-}
-
-input[type="text"]:-ms-input-placeholder { 
+input[type="text"]::-webkit-input-placeholder {
   color: #000000;
 }
 
-input[type="text"]::-ms-input-placeholder { 
+input[type="text"]:-ms-input-placeholder {
   color: #000000;
 }
 
-input[type="text"]::placeholder { 
+input[type="text"]::-ms-input-placeholder {
   color: #000000;
-} 
+}
+
+input[type="text"]::placeholder {
+  color: #000000;
+}
 
 .form-header {
   padding-top: 13px;
@@ -477,12 +455,10 @@ input[type="text"]::placeholder {
 
 .form-search {
   position: absolute;
-  animation-name: show;
-  animation-duration: 1s;
-  top: -395px;
+  top: 0;
   left: 316px;
   width: 512px;
-  padding-top: 54px;
+  padding-top: 55px;
   padding-left: 56px;
   font: inherit;
   font-size: 14px;
@@ -491,50 +467,69 @@ input[type="text"]::placeholder {
   color: #000000;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-          box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15); 
+          box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
 }
 
-@keyframes show {
-  0% {
-    top: 0%;
-  }
+.form-search.is-showed{
+  transform: translateY(0);
+}
+
+.form-search.no-js{
+  transform: translateY(0);
+}
+
+@keyframes shake {
+  0%,
   100% {
-    top: 100%;
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
-@keyframes close {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: 0%;
-  }
-}
-
-.form-close {
-  display: block;
-  animation-name: close;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+.submit-error {
+  animation: shake 0.6s;
 }
 
 .form-body {
   border: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .form-body p {
   border: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
-.form-search-label-from,
-.form-search-label-to {
+.form-search-label-from  {
   display: inline-block;
   margin-right: 18px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.form-search-label-to {
+  display: inline-block;
+  margin-right: 15px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -579,7 +574,7 @@ input[type="text"]::placeholder {
 .form-search-calendar {
   position: relative;
   top: 6px;
-  right: 42px;
+  right: 40px;
   background-color: transparent;
   fill: #cacaca;
   border: none;
@@ -638,7 +633,7 @@ input[type="text"]::placeholder {
 }
 
 .find-item .input-children {
-   margin-left: 26px;
+   margin-left: 23px;
    padding-left: 23px;
    padding-right: 23px;
    width: 114px;
@@ -650,7 +645,7 @@ input[type="text"]::placeholder {
   border: 2px solid #ebebeb;
 }
 
-.find-item input:focus { 
+.find-item input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -685,7 +680,7 @@ input[type="text"]::placeholder {
 
 .plus-child {
   position: absolute;
-  top: 191px; 
+  top: 191px;
   left: 475px;
 }
 
@@ -723,8 +718,8 @@ input[type="text"]::placeholder {
   color: rgba(255, 255, 255, 0.3)
 }
 
-/*Футер*/
 .page-footer {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,7 +838,7 @@ input[type="text"]::placeholder {
   letter-spacing: normal;
    color: #000000;
 }
-/*Страница отелей*/
+
 .form-hotels {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -862,7 +857,7 @@ input[type="text"]::placeholder {
   background-image: url("../img/background/filter-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-} 
+}
 
 .filter-col,
 .filter-range-field {
@@ -959,8 +954,8 @@ input[type="checkbox"] {
   color: #231f20;
   text-decoration: none;
 }
- 
-.button-link:hover, 
+
+.button-link:hover,
 .button-link:focus {
   fill: #81b3d2;
 }
@@ -1343,8 +1338,8 @@ input[type="checkbox"] {
 }
 
 .star-2 {
-  width: 47px; 
-}                               
+  width: 47px;
+}
 
 .rating-text {
   padding: 3px 14px;
@@ -1358,3 +1353,21 @@ input[type="checkbox"] {
   background-color: #f2f2f2;
 }
 
+.inner-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 23px;
+  padding-bottom: 30px;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 1200px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
