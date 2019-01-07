@@ -371,8 +371,37 @@ img {
   color: #333333;
 }
 /*Форма поиска*/
+.form-show {
+  display: block;
+  animation-name: show;
+  animation-duration: 2s;
+} 
+
+@keyframes show {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes close {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.hotel-button {
+  display: block;
+  width: 568px;
+  height: 86px;
+}
+
 .search-hotel {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,11 +470,17 @@ input[type="text"]::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.form {
+  position: relative;
+  overflow: hidden;
+}
+
 .form-search {
   position: absolute;
-  z-index: 1;
+  animation-name: show;
+  animation-duration: 1s;
+  top: -395px;
   left: 316px;
-  top: 291px;
   width: 512px;
   padding-top: 54px;
   padding-left: 56px;
@@ -457,6 +492,31 @@ input[type="text"]::placeholder {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15); 
+}
+
+@keyframes show {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes close {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.form-close {
+  display: block;
+  animation-name: close;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .form-body {
@@ -572,7 +632,7 @@ input[type="text"]::placeholder {
 .find-item .input-adults {
   margin-left: 39px;
   padding-left: 23px;
-  padding-right: 23px
+  padding-right: 23px;
   width: 114px;
   text-align: center;
 }
@@ -652,6 +712,7 @@ input[type="text"]::placeholder {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -662,12 +723,8 @@ input[type="text"]::placeholder {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.map {
-  position: relative;
-}
 /*Футер*/
 .page-footer {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1273,20 +1330,20 @@ input[type="checkbox"] {
   margin: 0;
   margin-left: 138px;
   margin-bottom: 46px;
-  background-image: url("../img/icon/star.svg");
-  background-repeat: space;
+  background-image: url("../img/icon/stars.png");
+  background-repeat: repeat-x;
 }
 
 .star-4 {
-  width: 95px;
+  width: 97px;
 }
 
 .star-3 {
-  width: 70px;
+  width: 72px;
 }
 
 .star-2 {
-  width: 46px; 
+  width: 47px; 
 }                               
 
 .rating-text {
@@ -1299,21 +1356,5 @@ input[type="checkbox"] {
   line-height: 21px;
   font-weight: 400;
   background-color: #f2f2f2;
-}
-
-.inner-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 22px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  color: #000000;
-  background-color: #fefefe;
 }
 
