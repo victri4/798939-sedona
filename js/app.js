@@ -1,9 +1,9 @@
 (function() {
-    var form = document.querySelector(".form-search");
+    var form = document.querySelector('.form-search');
     var inputs = form.querySelectorAll('input[type=text]');
     var btnSubmit = form.querySelector('.search-button');
 
-    var btn = document.querySelector(".hotel-button");
+    var btn = document.querySelector('.hotel-button');
 
     document.addEventListener('DOMContentLoaded', function() {
 
