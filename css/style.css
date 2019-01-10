@@ -938,7 +938,11 @@ input[type="checkbox"]:checked:disabled {
     user-select: none;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox:focus::before + label:focus::before {
+    outline: 2px dotted #81b3d2;
+}
+
+.filter-input-checkbox + label:before {
     content: "";
     position: absolute;
     left: -39px;
@@ -950,7 +954,7 @@ input[type="checkbox"]:checked:disabled {
     background-position: 0 0;
 }
 
-.filter-input-checkbox:checked+label::before {
+.filter-input-checkbox:checked + label:before {
     content: "";
     position: absolute;
     left: -39px;
