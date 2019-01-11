@@ -735,6 +735,10 @@ input[type="text"]::placeholder {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.footer-container {
+    margin: 0 auto;
+}
+
 .page-footer .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -783,6 +787,7 @@ input[type="text"]::placeholder {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 0;
+    margin-left: 27px;
     margin-top: 2px;
     padding: 0;
     width: 150px;
@@ -1388,6 +1393,15 @@ input[type="checkbox"]:checked:disabled {
 }
 
 .inner-footer {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 1200px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.inner-footer .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1398,10 +1412,4 @@ input[type="checkbox"]:checked:disabled {
     align-items: center;
     padding-top: 23px;
     padding-bottom: 30px;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 1200px;
-    color: #000000;
-    background-color: rgba(255, 255, 255, 0.8);
-}
+    }
