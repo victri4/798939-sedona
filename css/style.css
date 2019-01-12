@@ -28,24 +28,24 @@ img {
     height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .wrapper {
     position: relative;
     width: 1200px;
-    min-height: 100%;
     margin: 0 auto;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .5);
     box-shadow: 0 0 15px rgba(0, 0, 0, .5);
@@ -83,6 +83,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -94,6 +96,7 @@ img {
 
 .site-navigation li {
     width: 200px;
+    flex-shrink: 0;
 }
 
 .site-navigation li:nth-child(2) {
@@ -144,6 +147,7 @@ img {
     background-position: 0% 100.5%, center 28.5%;
     background-repeat: no-repeat;
     background-size: auto, cover;
+    background-color: #81b4d3;
 }
 
 .promo-first img {
@@ -156,19 +160,23 @@ img {
     width: 576px;
     margin: 60px auto 51px auto;
     padding: 0;
+    text-align: center;
 }
 
 .header-title {
-    text-align: center;
-    font-size: 21px;
-    margin-bottom: 26px;
+  margin-bottom: 26px;
+   font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
 }
 
 .title-promo {
-    margin-bottom: 50px;
     font-size: 14px;
-    font-weight: normal;
-    text-align: center;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 0.1px;
 }
 
 .advantages-list {
@@ -231,6 +239,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -313,6 +322,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -542,7 +552,6 @@ input[type="text"]::placeholder {
 }
 
 .form-search-field {
-    position: relative;
     width: 346px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -737,6 +746,7 @@ input[type="text"]::placeholder {
 
 .footer-container {
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .page-footer .footer-container {
@@ -744,18 +754,19 @@ input[type="text"]::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 37px;
-    padding-bottom: 40px;
+    padding-top: 36px;
+    padding-bottom: 39px;
     padding-left: 15px;
 }
 
 .footer-hashtag {
     width: 136px;
     margin: 0;
+    margin-left: 118px;
+    margin-right: 253px;
     color: #000000;
     font-size: 21px;
     line-height: 26px;
@@ -768,7 +779,7 @@ input[type="text"]::placeholder {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -787,10 +798,9 @@ input[type="text"]::placeholder {
     -ms-flex-pack: center;
     justify-content: center;
     margin: 0;
-    margin-left: 27px;
-    margin-top: 2px;
+    margin-right: 224px;
     padding: 0;
-    width: 150px;
+    width: 154px;
     text-align: center;
     list-style: none;
 }
@@ -851,6 +861,7 @@ input[type="text"]::placeholder {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    width: 200px;
     margin: 0;
     color: #000000;
     text-align: center;
@@ -925,12 +936,13 @@ input[type="text"]::placeholder {
     margin-bottom: 25px;
 }
 
-input[type="checkbox"] {
-    display: none
+input[type="checkbox"]:focus + label {
+  outline: 2px solid #81b3d2;
 }
 
-input[type="checkbox"]:disabled,
-input[type="checkbox"]:checked:disabled { 
+input[type="checkbox"]:disabled + label,
+input[type="checkbox"]:checked:disabled + label {
+  color:  #6a6a6a;
 }
 
 .filter-option label {
@@ -941,10 +953,6 @@ input[type="checkbox"]:checked:disabled {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.filter-input-checkbox:focus::before + label:focus::before {
-    outline: 2px dotted #81b3d2;
 }
 
 .filter-input-checkbox + label:before {
@@ -967,6 +975,18 @@ input[type="checkbox"]:checked:disabled {
     width: 25px;
     height: 25px;
     background-image: url("../img/icon/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox + label:disadled:before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/checkbox-disabled.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1131,6 +1151,7 @@ input[type="checkbox"]:checked:disabled {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 71.5px;
@@ -1406,10 +1427,11 @@ input[type="checkbox"]:checked:disabled {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 23px;
-    padding-bottom: 30px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 15px;   
     }
+
