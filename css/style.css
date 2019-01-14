@@ -584,6 +584,7 @@ input[type="text"]::placeholder {
     display: inline-block;
     vertical-align: top;
     margin-right: 18px;
+    margin-top: 6px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -593,6 +594,7 @@ input[type="text"]::placeholder {
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
+    margin-top: 6px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
