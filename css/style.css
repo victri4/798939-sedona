@@ -630,7 +630,6 @@ input[type="text"]::placeholder {
     font-size: 14px;
     font-weight: bold;
     color: #000000;
-    border: 2px solid #e5e5e5;
 }
 
 .form-search-calendar {
@@ -1249,6 +1248,8 @@ input[type="checkbox"]:checked:disabled+label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .hotel-sort-title {

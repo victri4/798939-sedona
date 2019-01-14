@@ -13,9 +13,9 @@
     });
 
     if (typeof(btn) != 'undefined' && btn != null) {
-        btn.addEventListener("click", function(evt) {
+        btn.addEventListener('click', function(evt) {
             evt.preventDefault();
-            form.classList.add('is-showed');
+            form.classList.toggle('is-showed');
         });
     }
 
